@@ -12,6 +12,7 @@ from kivy.graphics import Color
 from kivy.graphics import Line 
 from kivy.uix.popup import Popup
 from kivy.uix.screenmanager import SlideTransition,SwapTransition,ScreenManager, Screen, FadeTransition
+from kivy.utils import *
 from main import check
 
 class Arcs:
@@ -118,23 +119,31 @@ class SetupScreen(Screen,FloatLayout):
         else:
             self.drawArcPressed = False
             self.actionDrawArc.background_color = (1, 1, 1, 1)
-            #print("Là")        
-
+            #print("Là")       
+ 
     def colorAssignement(self,colorSet):
-
-        colors = []
-
-        for i in range(0,len(colorSet)):
-            colors.append(Color(random.randrange(1, 255)/255,random.randrange(1, 255)/255,random.randrange(1, 255)/255))
-
-        print(colors)
 
         d = 30.
         r = d/2
     
         with self.canvas:
             for sommet, nombre in colorSet.items():
-                    Color(colors[nombre])
+                    if nombre == 0:
+                        Color(1,0,0)
+                    elif nombre == 1:
+                        Color(0,1,0)
+                    elif nombre == 2:
+                        Color(0,0,1)
+                    elif nombre == 3:
+                        Color(1,1,0)
+                    elif nombre == 4:
+                        Color(0,1,1)
+                    elif nombre == 5:
+                        Color(1,0,1)
+                    elif nombre == 6:
+                        Color(0,1,1)
+                    elif nombre == 7:
+                        Color(1,1,1)            
                     print("{} -> {}".format(sommet,nombre))
                     x = self.vertexCoord[sommet][0]
                     y = self.vertexCoord[sommet][1]
