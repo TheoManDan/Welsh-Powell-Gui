@@ -14,6 +14,8 @@ If so it gives us the color for each vertex.
 
 - a second program does the same thing. But it lauches a GUI built using the Kivy framework which allows you to draw your graph. It's easier to use.
 
+ ![alt text](https://github.com/TheoManea/ProjetOpti-Githoub/edit/main/Capture.png?raw=true)
+
 ## Installation
 
   **pip install kivy**
