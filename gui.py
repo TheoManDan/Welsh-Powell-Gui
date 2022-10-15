@@ -215,10 +215,11 @@ class SetupScreen(Screen,FloatLayout):
                 with self.canvas:
                     Color(0,0,0)
                     d = 30.
+                    r = d/2
                     x = self.vertexCoord[self.nbVertex-1][0]
                     y = self.vertexCoord[self.nbVertex-1][1]
-                    Ellipse(pos=(x,y),size=(d,d))
-                    self.add_widget(Label(text=str(self.nbVertex),pos_hint={'center_x':(x-d)/1000,'center_y':(y-d)/500},
+                    Ellipse(pos=(x-r,y-r),size=(d,d))
+                    self.add_widget(Label(text=str(self.nbVertex-1),pos_hint={'center_x':(x-d)/1000,'center_y':(y-d)/500},
                                     color=(0, 0, 0)))
                     del self.vertexCoord[self.nbVertex-1]
                     self.nbVertex-=1

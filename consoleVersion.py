@@ -63,7 +63,7 @@ def check(mat,k):
 def main():
 
         if(len(sys.argv) < 2 ):
-                print("Usage : main.py [Klimit]")
+                print("Usage : consoleVersion.py [Klimit]")
         else:
                 k = int(sys.argv[1])
 

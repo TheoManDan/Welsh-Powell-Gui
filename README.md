@@ -18,3 +18,8 @@ If so it gives us the color for each vertex.
 
   **pip install kivy**
 
+## Running the program
+
+- python consoleVersion.py (for the GUI-less version)
+- python gui.py (for the version with a graphical interface) 
+
