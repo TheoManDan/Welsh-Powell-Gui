@@ -11,7 +11,7 @@
 
 In graph theory, vertex colouring is a way of labelling each individual vertex such that no two adjacent vertex have same colour. But we need to find out the number of colours we need to satisfy the given condition. It is not desirable to have a large variety of colours or labels. So, We have an algorithm called welsh Powell algorithm that gives the minimum colours we need. This algorithm is also used to find the chromatic number of a graph. This is an iterative greedy approach.
 
-## What we did ? 
+## Our work ? 
 
 - a first program wich implement the Welsh-Powell Algorithm. With the adjacency matrix and a number of color (k), the algorithm says if the graph can be k-colored.
 If so it gives us the color for each vertex. 
